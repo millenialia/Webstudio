@@ -58,6 +58,27 @@
               >
             </li>
           </ul>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+     
         </div>
       </div>
     </header>
@@ -125,31 +146,45 @@
           <h2 class="heading-secondary">What are we doing</h2>
           <ul class="list about-box">
             <li class="about-item">
-              <img
-                src="./images/web.jpg"
+              <picture>
+                <source srcset="./images/about/web_desktop@1x.webp 1x, ./images/about/web_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/about/web_desktop@1x.jpg 1x, ./images/about/web_desktop@2x.jpg 2x" type="image/jpg"/>
+              <img 
+                src="./images/about/web_desktop@1x.jpg"
                 alt="web"
                 width="360"
                 height="300"
                 class="img"
+                loading="lazy"
               />
+              </picture>
             </li>
-            <li class="about-item">
+            <picture>
+                <source srcset="./images/about/app_desktop@1x.webp 1x, ./images/about/app_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/about/app_desktop@1x.jpg 1x, ./images/about/app_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/app.jpg"
+                src="./images/about/app_desktop@1x.jpg"
                 alt="app"
                 width="360"
                 height="300"
                 class="img"
+                loading="lazy"
               />
+              </picture>
             </li>
             <li class="about-item">
+              <picture>
+                <source srcset="./images/about/mobile_desktop@1x.webp 1x, ./images/about/mobile_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/about/mobile_desktop@1x.jpg 1x, ./images/about/mobile_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/mobile.jpg"
+                src="./images/about/mobile_desktop@1x.jpg"
                 alt="mobile"
                 width="360"
                 height="300"
                 class="img"
+                loading="lazy"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -159,13 +194,18 @@
           <h2 class="heading-secondary">Our Team</h2>
           <ul class="list team-box">
             <li class="team-item">
+              <picture>
+                <source srcset="./images/team/mark_desktop@1x.webp 1x, ./images/team/mark_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/team/mark_desktop@1x.jpg 1x, ./images/team/mark_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/mark.jpg"
+                src="./images/team/mark_desktop@1x.jpg"
                 alt="Mark"
                 width="264"
                 height="260"
                 class="img"
+                loading="lazy"
               />
+              </picture>
               <div class="team-text">
                 <h3 class="heading-tertiary">Mark Guerrero</h3>
                 <p class="paragraph paragraph-team">Product Designer</p>
@@ -226,13 +266,18 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source srcset="./images/team/tom_desktop@1x.webp 1x, ./images/team/tom_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/team/tom_desktop@1x.jpg 1x, ./images/team/tom_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/tom.jpg"
+                src="./images/team/tom_desktop@1x.jpg"
                 alt="Tom"
                 width="264"
                 height="260"
                 class="img"
+                loading="lazy"
               />
+              </picture>
               <div class="team-text">
                 <h3 class="heading-tertiary">Tom Ford</h3>
                 <p class="paragraph paragraph-team">Frontend Developer</p>
@@ -293,13 +338,18 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source srcset="./images/team/camila_desktop@1x.webp 1x, ./images/team/camila_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/team/camila_desktop@1x.jpg 1x, ./images/team/camila_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/camila.jpg"
+                src="./images/team/camila_desktop@1x.jpg"
                 alt="Camila"
                 width="264"
                 height="260"
                 class="img"
+                loading="lazy"
               />
+              </picture>
               <div class="team-text">
                 <h3 class="heading-tertiary">Camila Garcia</h3>
                 <p class="paragraph paragraph-team">Marketing</p>
@@ -360,13 +410,18 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source srcset="./images/team/daniel_desktop@1x.webp 1x, ./images/team/daniel_desktop@2x.webp 2x" type="image/webp"/>
+                <source srcset="./images/team/daniel_desktop@1x.jpg 1x, ./images/team/daniel_desktop@2x.jpg 2x" type="image/jpg"/>
               <img
-                src="./images/daniel.jpg"
+                src="./images/team/daniel_desktop@1x.jpg"
                 alt="Daniel"
                 width="264"
                 height="260"
                 class="img"
+                loading="lazy"
               />
+              </picture>
               <div class="team-text">
                 <h3 class="heading-tertiary">Daniel Wilson</h3>
                 <p class="paragraph paragraph-team">UI Designer</p>
@@ -586,7 +641,7 @@
         </div>
         <div class="footer-subscribe">
           <form name="subscribe_form" class="subscribe-form" autocomplete="on">
-            <p class="paragraph paragraph-socials">Subscribe</p>
+            <p class="paragraph paragraph-subscribe">Subscribe</p>
             <div class="subscribe-box">
               <input
                 type="email"
@@ -607,6 +662,8 @@
         </div>
       </div>
     </footer>
+
+
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -686,7 +743,105 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu btn btn-close btn-close-toggle">
+        <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+              <li class="navigation-item">
+                <a href="./index.html" class="link"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="./portfolio.html" class="link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="link">Contacts</a>
+              </li>
+            </ul>
+      </ul>
+
+      <ul class="mobile-menu-contact list">
+        <li class="menu-tel-item"><a href="tel:+110001111111" class="menu-tel-link link"
+                >+11 (000) 111-11-11</a
+              ></li>
+        <li class="menu-mail-item"><a
+                href="mailto:info@devstudio.com"
+                class="menu-mail-link link"
+                >info@devstudio.com</a
+              ></li>
+        <li class="menu-socials-item">
+          <ul class="socials socials-menu list">
+            <li class="socials-item">
+              <a
+                href="https://www.instagram.com/"
+                class="socials-link link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://twitter.com/"
+                class="socials-link link"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://www.facebook.com/"
+                class="socials-link link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="socials-link link"
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
