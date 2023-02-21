@@ -741,11 +741,11 @@ body {
 }
 
 .subscribe-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 16px; */
 }
 
 /* tablet */
@@ -786,7 +786,7 @@ body {
 
 .subscribe-input {
     box-sizing: border-box;
-    width: 398px;
+    /* width: 398px; */
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
