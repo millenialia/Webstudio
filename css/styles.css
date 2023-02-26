@@ -49,14 +49,16 @@ body {
 
 .container{
 /* mobile */
-    max-width: 396px;
+    min-width: 320px;
+    max-width: 428px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 /* tablet */
 @media screen and (min-width: 768px) {
     .container{
-        max-width: 736px;
+        max-width: 768px;
     }
 }
 
@@ -229,6 +231,8 @@ body {
 
 .header-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 1.5;
     padding: 24px 0;
 }
@@ -236,7 +240,7 @@ body {
 /* tablet */
 @media screen and (min-width: 768px) {
     .header-box {
-    padding: 18px 0;
+    padding: 24px 0 12px 0;
     }
 }
 
@@ -276,17 +280,11 @@ body {
 .navigation-link {
     color: var(--dark-color);
     padding-top: 24px;
-    padding-bottom: 28px;
+    padding-bottom: 23px;
     position: relative;
     transition: color var(--anim-norm);
 }
 
-/* desktop */
-@media screen and (min-width: 1200px) {
-    .navigation-link {
-        
-    }
-}
 
 .navigation-link:hover,
 .navigation-link:focus {
@@ -318,6 +316,7 @@ body {
     .header-contact {
         display: flex;
         flex-direction: column;
+        gap: 6px;
         margin-left: 118px;
         font-size: 12px;
         line-height: 1.333333;
@@ -338,9 +337,17 @@ body {
 
 .header-contact-link {
     color: var(--text-color);
-    padding-top: 24px;
-    padding-bottom: 28px;
+    padding: 24px 0 12px 0;
+    
     transition: color var(--anim-norm);
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+    .header-contact-link {
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
 }
 
 .header-contact-link:hover {
@@ -355,7 +362,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1440px;
+    
     margin: 0 auto;
 
     /* mobile */
@@ -371,7 +378,7 @@ body {
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .order {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/order/office_tablet@1x.jpg');
     }
@@ -386,7 +393,7 @@ body {
         }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     .order {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/order/office_desktop@1x.jpg');
     }
@@ -414,6 +421,7 @@ body {
     .order {
         padding: 188px 0;
         margin: 0 auto;
+        max-width: 1440px;
     }
 }
 
@@ -589,7 +597,7 @@ body {
     justify-content: center;
     column-gap: 16px;
     row-gap: 72px;
-    margin-top: 24px;
+    margin-top: 72px;
 }
 
 /* tablet */
@@ -740,12 +748,28 @@ body {
     row-gap: 72px;
 }
 
+/* tablet */
+@media screen and (min-width: 768px) {
+    .footer-box {
+        padding-left: 108px;
+        justify-content: left;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+    .footer-box {
+        justify-content: center;
+        padding: 0 15px;
+    }
+}
+
 .subscribe-box {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* gap: 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 /* tablet */
@@ -786,7 +810,7 @@ body {
 
 .subscribe-input {
     box-sizing: border-box;
-    /* width: 398px; */
+    width: 398px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -1087,8 +1111,6 @@ body {
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1125,7 +1147,7 @@ body {
     padding: 80px 40px 40px 40px;
     background-color: var(--white-color);
     z-index: 999;
-
+    overflow: auto;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -1142,13 +1164,14 @@ body {
 }
 
 .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding: 0;
     margin: 0;
 }
 
 .mobile-menu .link {
-    display: block;
-    margin-bottom: 40px;
     color: var(--dark-color);
     font-weight: 700;
     font-size: 36px;
@@ -1161,11 +1184,12 @@ body {
 }
 
 .socials-menu{
+    justify-content: left;
     gap: 56px;
 }
 
 .mobile-menu-contact{
-margin-top: auto;
+margin-top: 284px;
 }
 
 .menu-tel-link{
