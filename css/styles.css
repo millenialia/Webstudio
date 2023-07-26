@@ -862,11 +862,13 @@ body {
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
 .portfolio-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 48px;
     row-gap: 48px;

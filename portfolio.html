@@ -27,6 +27,7 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-dark">studio</span></a
           >
+
           <nav class="navigation">
             <ul class="list navigation-list list">
               <li class="navigation-item">
@@ -42,6 +43,7 @@
               </li>
             </ul>
           </nav>
+
           <ul class="list header-contact list">
             <li class="header-contact-item">
               <a
@@ -56,6 +58,16 @@
               >
             </li>
           </ul>
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-bar"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -93,13 +105,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/banking.jpg"
-                    alt="banking"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/interface_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/interface_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/interface_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/interface_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/interface_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/interface_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/interface_mob_@1x.jpg"
+                      alt="interface"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">
@@ -119,13 +157,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/cashless.jpg"
-                    alt="cashless"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/payment_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/payment_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/payment_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/payment_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/payment_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/payment_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/payment_mob_@1x.jpg"
+                      alt="payment"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Cashless Payment</h2>
@@ -143,13 +207,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/meditation.jpg"
-                    alt="meditation"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/maditation_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/maditation_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/maditation_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/maditation_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/maditation_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/maditation_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/maditation_mob_@1x.jpg"
+                      alt="maditation"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Meditaion App</h2>
@@ -167,13 +257,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/taxi.jpg"
-                    alt="taxi"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/taxi_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/taxi_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/taxi_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/taxi_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/taxi_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/taxi_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/taxi_mob_@1x.jpg"
+                      alt="taxi"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Taxi Service</h2>
@@ -191,13 +307,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/ilustrations.jpg"
-                    alt="ilustrations"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/screen_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/screen_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/screen_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/screen_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/screen_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/screen_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/screen_mob_@1x.jpg"
+                      alt="screen"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Screen Illustrations</h2>
@@ -215,13 +357,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/course.jpg"
-                    alt="course"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/courses_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/courses_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/courses_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/courses_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/courses_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/courses_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/courses_mob_@1x.jpg"
+                      alt="courses"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Online Courses</h2>
@@ -239,13 +407,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/stories.jpg"
-                    alt="stories"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/instagram_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/instagram_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/instagram_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/instagram_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/instagram_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/instagram_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/instagram_mob_@1x.jpg"
+                      alt="instagram"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Instagram Stories Concept</h2>
@@ -263,13 +457,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/food.jpg"
-                    alt="food"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/food_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/food_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/food_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/food_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/food_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/food_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/food_mob_@1x.jpg"
+                      alt="food"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Organic Food</h2>
@@ -287,13 +507,39 @@
                       App · Cloud Storage App
                     </p>
                   </div>
-                  <img
-                    src="./images/coffee.jpg"
-                    alt="coffee"
-                    width="360"
-                    height="300"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/desk/coffee_desk_@1x.webp 1x,
+                        ./images/portfolio/desk/coffee_desk_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/tab/coffee_tab_@1x.jpg 1x,
+                        ./images/portfolio/tab/coffee_tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/mob/coffee_mob_@1x.jpg 1x,
+                        ./images/portfolio/mob/coffee_mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/mob/coffee_mob_@1x.jpg"
+                      alt="coffee"
+                      width="360"
+                      height="300"
+                      class="img"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio-text">
                   <h2 class="heading-tertiary">Fresh Coffee</h2>
@@ -397,5 +643,103 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu btn btn-close btn-close-toggle">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="navigation-item">
+          <a href="./index.html" class="link">Studio</a>
+        </li>
+        <li class="navigation-item">
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contact list">
+        <li class="menu-tel-item">
+          <a href="tel:+110001111111" class="menu-tel-link link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="menu-mail-item">
+          <a href="mailto:info@devstudio.com" class="menu-mail-link link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-socials-item">
+          <ul class="socials socials-menu list">
+            <li class="socials-item">
+              <a
+                href="https://www.instagram.com/"
+                class="socials-link link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://twitter.com/"
+                class="socials-link link"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://www.facebook.com/"
+                class="socials-link link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="socials-link link"
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
